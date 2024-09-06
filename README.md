@@ -42,7 +42,7 @@ The API is designed with a focus on scalability, security, and maintainability, 
    ```bash
    docker run \
     --name postgres \
-    -e POSTGRES_USER=victorFranco \
+    -e POSTGRES_USER=myUser \
     -e POSTGRES_PASSWORD=mySecretPassword \
     -e POSTGRES_DB=heroes \
     -p 5432:5432 \

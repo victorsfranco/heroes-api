@@ -37,7 +37,7 @@ The API is designed with a focus on scalability, security, and maintainability, 
 3. Configure environment variables for MongoDB, PostgreSQL, and JWT.
 
 4. Run docker containers:
-5. 
+
 ## -- Client for PostgreSQL
    ```bash
    docker run \
@@ -83,11 +83,11 @@ docker run \
  mongoclient/mongoclient
 ```
 
-6. Run the application:
+5. Run the application:
    ```bash
    npm run prod
    ```
-7. Run tests:
+6. Run tests:
    ```bash
    npm test
    ```

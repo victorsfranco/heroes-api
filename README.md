@@ -37,30 +37,33 @@ The API is designed with a focus on scalability, security, and maintainability, 
 3. Configure environment variables for MongoDB, PostgreSQL, and JWT.
 
 4. Run docker containers:
-
+5. 
+## -- Client for PostgreSQL
    ```bash
    docker run \
- --name postgres \
- -e POSTGRES_USER=victorFranco \
- -e POSTGRES_PASSWORD=mySecretPassword \
- -e POSTGRES_DB=heroes \
- -p 5432:5432 \
- -d \
- postgres
+    --name postgres \
+    -e POSTGRES_USER=victorFranco \
+    -e POSTGRES_PASSWORD=mySecretPassword \
+    -e POSTGRES_DB=heroes \
+    -p 5432:5432 \
+    -d \
+    postgres
 
-docker exec -it postgres /bin/bash
+   docker exec -it postgres /bin/bash
+   ```
 
 ## -- Client for PostgreSQL
-
+```bash
 docker run \
  --name adminer \
  -p 9090:8080 \
  --link postgres \
  -d \
  adminer
+```
 
 ## -- MongoDB
-
+```bash
 docker run \
  --name mongodb \
  -p 27017:27017 \
@@ -68,17 +71,17 @@ docker run \
  -e MONGO_INITDB_ROOT_PASSWORD=mySecretPassword \
  -d \
  mongo:4
+```
 
 ## -- Client for MongoDB
-
+```bash
 docker run \
  --name mongoclient \
  -p 3000:3000 \
  --link mongodb:mongodb \
  -d \
  mongoclient/mongoclient
-
-   ```
+```
 
 6. Run the application:
    ```bash

@@ -16,7 +16,7 @@ The API is designed with a focus on scalability, security, and maintainability, 
 
 ## Tech Stack 👾
 
-- **Node.js**: Backend framework.
+- **Node.js**: JavaScript runtime.
 - **MongoDB**: For storing hero data.
 - **PostgreSQL**: For user authentication.
 - **Mocha**: For unit and integration tests.
@@ -28,7 +28,7 @@ The API is designed with a focus on scalability, security, and maintainability, 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/heroes-api.git
+   git clone git@github.com:victorsfranco/heroes-api.git
    ```
 2. Install dependencies:
    ```bash

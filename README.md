@@ -38,7 +38,7 @@ The API is designed with a focus on scalability, security, and maintainability, 
 
 4. Run docker containers:
 
-## -- Client for PostgreSQL
+- Client for PostgreSQL
    ```bash
    docker run \
     --name postgres \
@@ -52,7 +52,7 @@ The API is designed with a focus on scalability, security, and maintainability, 
    docker exec -it postgres /bin/bash
    ```
 
-## -- Client for PostgreSQL
+- Client for PostgreSQL
 ```bash
 docker run \
  --name adminer \
@@ -62,7 +62,7 @@ docker run \
  adminer
 ```
 
-## -- MongoDB
+- MongoDB
 ```bash
 docker run \
  --name mongodb \
@@ -73,7 +73,7 @@ docker run \
  mongo:4
 ```
 
-## -- Client for MongoDB
+- Client for MongoDB
 ```bash
 docker run \
  --name mongoclient \

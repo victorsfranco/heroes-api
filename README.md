@@ -1,4 +1,4 @@
-# Heroes API
+# Heroes API 
 
 ## Overview
 
@@ -6,7 +6,7 @@ This project is a API built to manage a collection of heroes. It allows authenti
 
 The API is designed with a focus on scalability, security, and maintainability, ensuring that only authenticated users can manage the data. It is fully tested with high code coverage, guaranteeing the quality and reliability of the application.
 
-## Features
+## Features ✨
 
 - **CRUD Operations**: Create, Read, Update, and Delete heroes.
 - **Authentication**: Secure user authentication using PostgreSQL.
@@ -14,7 +14,7 @@ The API is designed with a focus on scalability, security, and maintainability, 
 - **Test Coverage**: Comprehensive test suite ensuring high-quality code.
 - **Scalable**: Built to handle large datasets and numerous users.
 
-## Tech Stack
+## Tech Stack 👾
 
 - **Node.js**: Backend framework.
 - **MongoDB**: For storing hero data.
@@ -24,7 +24,7 @@ The API is designed with a focus on scalability, security, and maintainability, 
 - **Hapi**: Web framework for routing and middleware.
 - **Swagger**: Documentation.
 
-## Setup and Installation
+## Setup and Installation 🖥️
 
 1. Clone the repository:
    ```bash
@@ -92,7 +92,7 @@ docker run \
    npm test
    ```
 
-## API Endpoints
+## API Endpoints 🛣️
 
 <!-- - **POST** `/heroes` - Create a new hero.
 - **GET** `/heroes` - Get a list of heroes.
@@ -102,7 +102,7 @@ docker run \
 
 The API endpoints can be view on swagger, starting the API and navigating to `/documentation` endpoint.
 
-## Testing
+## Testing ✅
 
 The API is covered by automated tests that verify the correctness of each feature. Tests ensure that user authentication, data validation, and all CRUD operations are working as expected.
 
@@ -112,6 +112,5 @@ Run the tests using:
 npm test
 ```
 
-## Contributions
-
+## Contributions 🤝
 Contributions are welcome! Feel free to fork the repository, create a new branch, and submit a pull request for review.

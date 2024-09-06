@@ -38,11 +38,53 @@ The API is designed with a focus on scalability, security, and maintainability, 
 
 4. Run docker containers:
 
-5. Run the application:
+   ```bash
+   docker run \
+ --name postgres \
+ -e POSTGRES_USER=victorFranco \
+ -e POSTGRES_PASSWORD=mySecretPassword \
+ -e POSTGRES_DB=heroes \
+ -p 5432:5432 \
+ -d \
+ postgres
+
+docker exec -it postgres /bin/bash
+
+## -- Client for PostgreSQL
+
+docker run \
+ --name adminer \
+ -p 9090:8080 \
+ --link postgres \
+ -d \
+ adminer
+
+## -- MongoDB
+
+docker run \
+ --name mongodb \
+ -p 27017:27017 \
+ -e MONGO_INITDB_ROOT_USERNAME=admin \
+ -e MONGO_INITDB_ROOT_PASSWORD=mySecretPassword \
+ -d \
+ mongo:4
+
+## -- Client for MongoDB
+
+docker run \
+ --name mongoclient \
+ -p 3000:3000 \
+ --link mongodb:mongodb \
+ -d \
+ mongoclient/mongoclient
+
+   ```
+
+6. Run the application:
    ```bash
    npm run prod
    ```
-6. Run tests:
+7. Run tests:
    ```bash
    npm test
    ```
